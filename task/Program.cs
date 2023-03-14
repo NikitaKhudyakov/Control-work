@@ -1,11 +1,26 @@
 ﻿
+int lengthArray = int.Parse(Console.ReadLine());
+int index = 0;
 string[] array = CountingSymbol(lengthArray, index);
 
 string[] CountingSymbol(int lengthArray, int index)
 {
+string[] array = new string[lengthArray];
+for (int i = 0; i < lengthArray; i++)
+{
 
-
+string symbol = Console.ReadLine();
+int lengthA = symbol.Length;
+if (lengthA <= 3)
+{
+for (int j = index; j < array.Length; j++)
+{
+array[j] = symbol;
+}
+index++;
+}
 }
 
 
 return array;
+}
