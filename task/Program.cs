@@ -21,6 +21,10 @@ index++;
 }
 }
 
-
+Console.WriteLine();
+for (int j = 0; j < index; j++)
+{
+Console.Write($"{array[j]} ");
+}
 return array;
 }
